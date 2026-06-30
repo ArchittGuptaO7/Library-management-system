@@ -1,152 +1,260 @@
-# Library Management System (LMS)
+# 📚 Library Management System (LMS)
 
-A simple yet comprehensive C++ application for managing library operations including book inventory, member registration, and book borrowing/returning functionality.
+A simple, modular, and object-oriented **Library Management System** built in **C++**. This application allows users to manage books, register members, and handle book borrowing and returning through a menu-driven interface.
 
-## Features
+---
 
-- **Book Management**
-  - Add new books to the library
-  - Remove books from inventory
-  - Search books by ISBN or title
-  - View all books in the library
-  - Track book availability status
+## 🚀 Live Demo
 
-- **Member Management**
-  - Register new library members
-  - Remove members from the system
-  - Search for member information
-  - View all registered members
+> **Live Application:** *Coming Soon*
+> Replace the link below once your project is deployed.
 
-- **Borrowing System**
-  - Members can borrow available books
-  - Members can return borrowed books
-  - Automatic availability tracking
+**🔗 Live Demo:** https://your-live-link-here.com
 
-- **Library Statistics**
-  - Total number of books
-  - Number of available books
-  - Number of borrowed books
-  - Total registered members
+---
 
-## Project Structure
+## ✨ Features
 
+### 📖 Book Management
+
+* Add new books to the library
+* Remove books from the inventory
+* Search books by **ISBN** or **Title**
+* Display all books
+* Track book availability
+
+### 👤 Member Management
+
+* Register new library members
+* Remove existing members
+* Search members by ID
+* Display all registered members
+
+### 🔄 Borrowing System
+
+* Borrow available books
+* Return borrowed books
+* Automatic availability updates
+
+### 📊 Library Statistics
+
+* Total books
+* Available books
+* Borrowed books
+* Registered members
+
+---
+
+## 📁 Project Structure
+
+```text
+Book.h / Book.cpp        - Book class definition and implementation
+Member.h / Member.cpp    - Member class definition and implementation
+Library.h / Library.cpp  - Core library management logic
+main.cpp                 - Menu-driven application
+README.md                - Project documentation
+LICENSE                  - Apache License 2.0
 ```
-Book.h / Book.cpp          - Book class definition and implementation
-Member.h / Member.cpp      - Member class definition and implementation
-Library.h / Library.cpp    - Library class (core management system)
-main.cpp                   - Main application with menu-driven interface
-README.md                  - This file
-LICENSE                    - Apache License 2.0
-```
 
-## Class Architecture
+---
+
+## 🏗️ Class Architecture
 
 ### Book Class
-- **Attributes**: title, author, ISBN, publication year, availability status
-- **Methods**: getters, setters, display information
+
+**Attributes**
+
+* Title
+* Author
+* ISBN
+* Publication Year
+* Availability Status
+
+**Methods**
+
+* Getters and setters
+* Display book information
+
+---
 
 ### Member Class
-- **Attributes**: member ID, name, email, phone number, membership date
-- **Methods**: getters, display information
+
+**Attributes**
+
+* Member ID
+* Name
+* Email
+* Phone Number
+* Membership Date
+
+**Methods**
+
+* Getters
+* Display member information
+
+---
 
 ### Library Class
-- **Book Operations**: add, remove, search, display
-- **Member Operations**: add, remove, search, display
-- **Borrowing Operations**: borrow book, return book
-- **Utility**: statistics and book availability tracking
 
-## Compilation Instructions
+**Book Operations**
+
+* Add Book
+* Remove Book
+* Search Book
+* Display Books
+
+**Member Operations**
+
+* Add Member
+* Remove Member
+* Search Member
+* Display Members
+
+**Borrowing Operations**
+
+* Borrow Book
+* Return Book
+
+**Utility Functions**
+
+* Library statistics
+* Availability tracking
+
+---
+
+## 🛠️ Technologies Used
+
+* **Language:** C++
+* **Standard:** C++11
+* **Programming Paradigm:** Object-Oriented Programming (OOP)
+* **Data Structures:** `std::vector`
+* **Architecture:** Modular programming with separate header and source files
+
+---
+
+## ⚙️ Installation & Compilation
 
 ### Prerequisites
-- C++ compiler (g++, clang, or MSVC)
-- C++11 or higher
 
-### Steps to Compile
+* GCC, Clang, or MSVC
+* C++11 or later
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ArchittGuptaO7/LMS.git
-   cd LMS
-   ```
+### Clone the Repository
 
-2. Compile using g++:
-   ```bash
-   g++ -std=c++11 -o lms main.cpp Book.cpp Member.cpp Library.cpp
-   ```
+```bash
+git clone https://github.com/ArchittGuptaO7/LMS.git
+cd LMS
+```
 
-   Or using clang:
-   ```bash
-   clang++ -std=c++11 -o lms main.cpp Book.cpp Member.cpp Library.cpp
-   ```
+### Compile
 
-3. Run the application:
-   ```bash
-   ./lms
-   ```
+Using **g++**
 
-## Usage
+```bash
+g++ -std=c++11 -o lms main.cpp Book.cpp Member.cpp Library.cpp
+```
 
-Once the application is running, you'll see a menu with 12 options:
+Using **clang++**
 
-1. **Add Book** - Register a new book in the library
-2. **Remove Book** - Delete a book from inventory
-3. **Search Book** - Find a book by ISBN or title
-4. **Display All Books** - View complete book inventory
-5. **Add Member** - Register a new library member
-6. **Remove Member** - Remove a member from the system
-7. **Search Member** - Look up member details
-8. **Display All Members** - View all registered members
-9. **Borrow Book** - Member borrows a book
-10. **Return Book** - Member returns a borrowed book
-11. **Library Statistics** - View library statistics
-12. **Exit** - Close the application
+```bash
+clang++ -std=c++11 -o lms main.cpp Book.cpp Member.cpp Library.cpp
+```
 
-## Sample Data
+### Run
 
-The application comes pre-loaded with sample data:
+**Linux/macOS**
 
-**Books:**
-- The Great Gatsby (ISBN001)
-- 1984 (ISBN002)
-- To Kill a Mockingbird (ISBN003)
+```bash
+./lms
+```
 
-**Members:**
-- John Doe (ID: 1001)
-- Jane Smith (ID: 1002)
+**Windows**
 
-## Example Workflow
+```bash
+lms.exe
+```
 
-1. Run the application
-2. Select option 9 to borrow a book
-3. Enter member ID: 1001
-4. Enter ISBN: ISBN001
-5. Book is now marked as unavailable
-6. Select option 4 to see updated availability
-7. Select option 10 to return the book
-8. Book is marked as available again
+---
 
-## Technical Details
+## 📋 Menu Options
 
-- **Language**: C++ (C++11 standard)
-- **Paradigm**: Object-Oriented Programming (OOP)
-- **Data Structures**: std::vector for storing books and members
-- **File Organization**: Modular with separate headers and implementation files
+```
+1. Add Book
+2. Remove Book
+3. Search Book
+4. Display All Books
+5. Add Member
+6. Remove Member
+7. Search Member
+8. Display All Members
+9. Borrow Book
+10. Return Book
+11. Library Statistics
+12. Exit
+```
 
-## License
+---
 
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+## 📚 Sample Data
 
-## Author
+### Books
 
-ArchittGuptaO7
+| Title                 | ISBN    |
+| --------------------- | ------- |
+| The Great Gatsby      | ISBN001 |
+| 1984                  | ISBN002 |
+| To Kill a Mockingbird | ISBN003 |
 
-## Future Enhancements
+### Members
 
-- Persistent data storage (database or file-based)
-- Due date tracking for borrowed books
-- Fine calculation for overdue books
-- User authentication
-- Advance book reservation system
-- Book categories and genres
-- Graphical user interface (GUI)
-- REST API for remote access
+| Name       | Member ID |
+| ---------- | --------- |
+| John Doe   | 1001      |
+| Jane Smith | 1002      |
+
+---
+
+## 💻 Example Workflow
+
+1. Launch the application.
+2. Select **Borrow Book**.
+3. Enter **Member ID:** `1001`
+4. Enter **ISBN:** `ISBN001`
+5. The selected book becomes unavailable.
+6. View the updated inventory using **Display All Books**.
+7. Return the book using **Return Book**.
+8. The book becomes available again.
+
+---
+
+## 🌟 Future Enhancements
+
+* File-based or database storage
+* Due date tracking
+* Fine calculation for overdue books
+* User authentication
+* Book reservation system
+* Book categories and genres
+* Graphical User Interface (GUI)
+* REST API support
+* Admin dashboard
+* Search filters and sorting
+
+---
+
+## 📄 License
+
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+## 👨‍💻 Author
+
+**Archit Gupta**
+
+* GitHub: https://github.com/ArchittGuptaO7
+* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+
+---
+
+⭐ If you found this project useful, consider giving it a **Star** on GitHub!
