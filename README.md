@@ -9,7 +9,7 @@ A simple, modular, and object-oriented **Library Management System** built in **
 > **Live Application:** *Coming Soon*
 > Replace the link below once your project is deployed.
 
-**🔗 Live Demo:** https://your-live-link-here.com
+**🔗 Live Demo:** [https://your-live-link-here.com](https://archittguptao7.github.io/Library-management-system/)
 
 ---
 
