@@ -253,7 +253,7 @@ This project is licensed under the **Apache License 2.0**. See the [LICENSE](LIC
 **Archit Gupta**
 
 * GitHub: https://github.com/ArchittGuptaO7
-* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+* LinkedIn:www.linkedin.com/in/archittguptao7
 
 ---
 
